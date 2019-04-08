@@ -1,3 +1,8 @@
+body{background-image: url("../images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;               
+  
+}
 .main_header{border: 5px solid #0c0f14;
              margin-top: 10px;
              background-color:#2c6328; 
