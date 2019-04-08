@@ -118,3 +118,9 @@ $(document).ready(function () {
       
     
   })
+  
+  $("button#hold1").click(function () {
+    $("button#roll_dice1").hide();
+    $("button#roll_dice2").show();
+    $(".result1").html("Your dice score is: " + player1.currentScore +"<br> total score is " + player1.totalScore);    
+  })
