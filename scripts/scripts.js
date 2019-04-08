@@ -124,3 +124,11 @@ $(document).ready(function () {
     $("button#roll_dice2").show();
     $(".result1").html("Your dice score is: " + player1.currentScore +"<br> total score is " + player1.totalScore);    
   })
+  
+  $("button#hold2").click(function () {
+    $("button#roll_dice2").hide();
+    $("button#roll_dice1").show();
+    $(".result2").html("Your dice score is: " + player2.currentScore +"<br> total score is " + player2.totalScore);    
+  })
+  
+})
