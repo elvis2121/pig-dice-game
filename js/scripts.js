@@ -1,13 +1,15 @@
 
 $(document).ready(function () {
-  
+  //constructor
   function Player(id,score,totalScore) {
     this.id =id;
     this.totalScore = 0;
   }
+  //object initialization
   player1 = new Player();
   player2 = new Player();
   
+  //player1 roll dice event
   $("button#roll_dice1").on("click", function () {
     Player.prototype.currentScore = Math.floor(Math.random() * 6) + 1;
     player1.totalScore += player1.currentScore;
@@ -65,6 +67,7 @@ $(document).ready(function () {
     
   })
   
+  //player2 rolldice event
   $("button#roll_dice2").on("click", function () {
     Player.prototype.currentScore = Math.floor(Math.random() * 6) + 1;
     player2.totalScore += player2.currentScore;
@@ -119,12 +122,14 @@ $(document).ready(function () {
     
   })
   
+  //hold dice player1
   $("button#hold1").click(function () {
     $("button#roll_dice1").hide();
     $("button#roll_dice2").show();
     $(".result1").html("Your dice score is: " + player1.currentScore +"<br> total score is " + player1.totalScore);    
   })
   
+  //hold dice player 2
   $("button#hold2").click(function () {
     $("button#roll_dice2").hide();
     $("button#roll_dice1").show();
