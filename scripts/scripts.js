@@ -64,3 +64,57 @@ $(document).ready(function () {
 
     
   })
+  
+  $("button#roll_dice2").on("click", function () {
+    Player.prototype.currentScore = Math.floor(Math.random() * 6) + 1;
+    player2.totalScore += player2.currentScore;
+  
+    
+    if (player2.currentScore===1 ) {
+      $(".dice_image2").html("<img src='images/dice1.png' style='width:92px;height:62px;margin-left:260px;'/>");
+      alert("you have scored 1. next player roll dice !!!!");
+      $("button#roll_dice2").hide();
+      $("button#roll_dice1").show();
+      player2.totalScore=0;
+    
+      $(".result2").html("Your dice score is: " + player2.currentScore + " total score is " + player2.totalScore);     
+             
+    }
+    if (player2.currentScore===2 ) {
+      $(".dice_image2").html("<img src='images/dice2.png' style='width:92px;height:62px;margin-left:260px;'/>");
+      $(".result2").html("Your dice score is: " + player2.currentScore + "<br>  total score is " + player1.totalScore); 
+      
+    }
+    if (player2.currentScore===3 ) {
+      $(".dice_image2").html("<img src='images/dice3.png' style='width:92px;height:62px;margin-left:260px;'/>");
+      $(".result2").html("Your dice score is: " + player1.currentScore + "<br>  total score is " + player1.totalScore); 
+      
+    }
+    if (player2.currentScore===4 ) {
+      $(".dice_image2").html("<img src='images/dice4.png' style='width:92px;height:62px;margin-left:260px;'/>");
+      $(".result2").html("Your dice score is: " + player1.currentScore + "<br>  total score is " + player1.totalScore); 
+      
+    }
+    if (player2.currentScore===5 ) {
+      $(".dice_image2").html("<img src='images/dice5.jpeg' style='width:92px;height:62px;margin-left:260px;'/>");
+      $(".result2").html("Your dice score is: " + player1.currentScore + "<br>  total score is " + player1.totalScore); 
+      
+    }
+    if (player2.currentScore===6 ) {
+      $(".dice_image2").html("<img src='images/dice6.jpeg' style='width:92px;height:62px;margin-left:260px;'/>");
+      $(".result2").html("Your dice score is: " + player1.currentScore + "<br>  total score is " + player1.totalScore); 
+      
+    }
+    if (player2.totalScore >=100) {
+      alert("your total score is 100. player2 wins !!!!");
+      
+      
+    }
+    else {
+      $(".result2").html("Your dice score is: " + player2.currentScore + " <br> total score is: " + player2.totalScore);
+      
+    }  
+    
+      
+    
+  })
