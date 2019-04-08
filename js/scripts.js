@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   //constructor
   function Player(id,score,totalScore) {
@@ -49,9 +48,7 @@ $(document).ready(function () {
       $(".dice_image1").html("<img src='images/dice6.jpeg' style='width:92px;height:62px;margin-left:260px;'/>");
       $(".result1").html("Your dice score is: " + player1.currentScore + "<br>  total score is " + player1.totalScore); 
       
-    }
-      
-             
+    }            
     
     if (player1.totalScore >=100) {
       alert("your total score is 100. player1 wins !!!!");
@@ -61,10 +58,7 @@ $(document).ready(function () {
     else {
       $(".result1").html("Your dice score is: " + player1.currentScore + "<br>  total score is " + player1.totalScore);
       
-    }  
-    
-
-    
+    }   
   })
   
   //player2 rolldice event
@@ -116,9 +110,7 @@ $(document).ready(function () {
     else {
       $(".result2").html("Your dice score is: " + player2.currentScore + " <br> total score is: " + player2.totalScore);
       
-    }  
-    
-      
+    }    
     
   })
   
