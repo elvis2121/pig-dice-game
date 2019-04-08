@@ -49,11 +49,42 @@
           margin-right: 10px;
             
 }
+.flex_box2{width: 50%;
+           
+  
+}
+.flex_box1 h3{text-align: center;
+              color: #d39e0c;
+              font-size: 45px;
+  
+}
+
+.flex_box2 h3{text-align: center;
+              color: #d39e0c;
+              font-size: 45px;
+  
+}
+
+
 .roll_dice{margin-left: 220px;
            margin-top: 40px;
            
   
 }
 #roll_dice1{width: 50%;
+  
+}
+
+#roll_dice2{width: 50%;
+}
+
+#hold1{width: 50%;
+}
+
+#hold2{width: 50%;
+}
+
+.hold_dice{margin-left: 220px;
+           margin-top: 40px;
   
 }
